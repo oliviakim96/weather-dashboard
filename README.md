@@ -20,11 +20,4 @@
 
 # Image
 # URL
-    
-/*
-Skills
-Use the fetch API to send requests to a server-side API
-Recieve aLnd parse data in the JSON format
-Use returned data to dynamically generate HTML
-Handle response codes and metadata, including headers, status and UR*/
-f
+https://oliviakim96.github.io/weather-dashboard/

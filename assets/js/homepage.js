@@ -17,7 +17,7 @@ var formSubmitHandler= function(event){
 };
 
 function getLocation() {
-    var apiUrl=`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=f0848502da03f1a49e19e44164dd9d9c`
+    var apiUrl="https://api.openweathermap.org/data/2.5/onecall?lat="+lat + "&lon=" + lon + "&appid=f0848502da03f1a49e19e44164dd9d9c";
     fetch(apiUrl).then(function(response){
         if(response.ok){
             response.json().then(function(data){
@@ -31,12 +31,12 @@ function getLocation() {
 };
 
 function getWeather(lat,lon) {
-    var apiUrl=`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=f0848502da03f1a49e19e44164dd9d9c`
+    var apiUrl="https://api.openweathermap.org/data/2.5/onecall?lat="+lat + "&lon=" + lon + "&appid=f0848502da03f1a49e19e44164dd9d9c";
     fetch(apiUrl).then(function(response){
         if(response.ok){
             response.json().then(function(data){
                 
-
+                displayWeather();
 
             })
         }
@@ -44,3 +44,9 @@ function getWeather(lat,lon) {
         console.log(error)
     })
 };
+
+function displayWeather () {
+
+}
+
+searchFormEl.addEventListener("submit",formSubmitHandler);
